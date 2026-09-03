@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Students | EduLearn Admin</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="admin-sidebar" id="adminSidebar">
+
+        <div class="admin-logo">
+            <h2>EduLearn</h2>
+            <span>Administration</span>
+        </div>
+
+        <nav class="admin-nav">
+
+            <a href="dashboard.html">
+                <span>▣</span>
+                Dashboard
+            </a>
+
+            <a href="students.html" class="active">
+                <span>👨‍🎓</span>
+                Students
+            </a>
+
+            <a href="teachers.html">
+                <span>👨‍🏫</span>
+                Teachers
+            </a>
+
+            <a href="courses.html">
+                <span>📚</span>
+                Courses
+            </a>
+
+            <a href="modules.html">
+                <span>▤</span>
+                Modules
+            </a>
+
+            <a href="lessons.html">
+                <span>📖</span>
+                Lessons
+            </a>
+
+            <a href="assignments.html">
+                <span>📝</span>
+                Assignments
+            </a>
+
+            <a href="submissions.html">
+                <span>📥</span>
+                Submissions
+            </a>
+
+            <a href="announcements.html">
+                <span>📢</span>
+                Announcements
+            </a>
+
+            <a href="settings.html">
+                <span>⚙</span>
+                Settings
+            </a>
+
+        </nav>
+
+        <div class="admin-sidebar-bottom">
+
+            <a href="../auth/login.html" class="logout-link">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="admin-main">
+
+        <!-- TOPBAR -->
+
+        <header class="admin-topbar">
+
+            <button class="admin-menu-btn" id="adminMenuBtn">
+                ☰
+            </button>
+
+            <div class="admin-page-title">
+
+                <h1>Students</h1>
+
+                <p>
+                    Manage student accounts and academic records.
+                </p>
+
+            </div>
+
+            <div class="admin-user">
+
+                <div class="admin-user-avatar">
+                    A
+                </div>
+
+                <div class="admin-user-info">
+
+                    <strong>Administrator</strong>
+
+                    <span>System Admin</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             STUDENT CONTENT
+        ========================== -->
+
+        <section class="admin-content">
+
+            <!-- PAGE INTRO -->
+
+            <div class="admin-welcome">
+
+                <div>
+
+                    <span class="welcome-label">
+                        STUDENT MANAGEMENT
+                    </span>
+
+                    <h2>
+                        Manage Students
+                    </h2>
+
+                    <p>
+                        Create, view and manage student accounts,
+                        student IDs, programmes, courses and
+                        academic status.
+                    </p>
+
+                </div>
+
+                <div class="welcome-icon">
+                    👨‍🎓
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 ACTION BAR
+            ========================== -->
+
+            <div class="student-action-bar">
+
+                <div>
+
+                    <h2>
+                        Student Records
+                    </h2>
+
+                    <p>
+                        View and manage all registered students.
+                    </p>
+
+                </div>
+
+                <a href="add-student.html"
+                   class="admin-primary-button">
+
+                    + Add Student
+
+                </a>
+
+            </div>
+
+
+            <!-- =========================
+                 SEARCH AND FILTER
+            ========================== -->
+
+            <div class="student-filters">
+
+                <div class="student-search">
+
+                    <label for="studentSearch">
+                        Search Students
+                    </label>
+
+                    <input
+                        type="text"
+                        id="studentSearch"
+                        placeholder="Search by name or student ID..."
+                    >
+
+                </div>
+
+
+                <div class="student-filter">
+
+                    <label for="programmeFilter">
+                        Programme
+                    </label>
+
+                    <select id="programmeFilter">
+
+                        <option value="">
+                            All Programmes
+                        </option>
+
+                        <option value="web-development">
+                            Web Development
+                        </option>
+
+                        <option value="programming">
+                            Programming Fundamentals
+                        </option>
+
+                        <option value="digital-skills">
+                            Digital Skills
+                        </option>
+
+                        <option value="data-technology">
+                            Data & Technology
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="student-filter">
+
+                    <label for="statusFilter">
+                        Status
+                    </label>
+
+                    <select id="statusFilter">
+
+                        <option value="">
+                            All Statuses
+                        </option>
+
+                        <option value="active">
+                            Active
+                        </option>
+
+                        <option value="inactive">
+                            Inactive
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 STUDENT TABLE
+            ========================== -->
+
+            <div class="admin-panel student-table-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <h2>
+                            All Students
+                        </h2>
+
+                        <p>
+                            Student accounts registered on the platform.
+                        </p>
+
+                    </div>
+
+                    <span class="student-count">
+                        0 Students
+                    </span>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table class="student-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Student ID
+                                </th>
+
+                                <th>
+                                    Student
+                                </th>
+
+                                <th>
+                                    Programme
+                                </th>
+
+                                <th>
+                                    Courses
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Date Created
+                                </th>
+
+                                <th>
+                                    Action
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="studentTableBody">
+
+                            <!--
+
+                            Student records will
+                            be inserted here
+                            by JavaScript/backend.
+
+                            -->
+
+                            <tr class="empty-table-row">
+
+                                <td colspan="7">
+
+                                    <div class="table-empty-state">
+
+                                        <div>
+                                            👨‍🎓
+                                        </div>
+
+                                        <h3>
+                                            No Students Found
+                                        </h3>
+
+                                        <p>
+                                            Student accounts created
+                                            by the administrator will
+                                            appear here.
+                                        </p>
+
+                                        <a href="add-student.html"
+                                           class="admin-primary-button">
+
+                                            + Add First Student
+
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 STUDENT MANAGEMENT NOTE
+            ========================== -->
+
+            <div class="admin-info-box">
+
+                <div class="info-icon">
+                    ℹ
+                </div>
+
+                <div>
+
+                    <h3>
+                        Student Account Management
+                    </h3>
+
+                    <p>
+                        Student accounts will be created by the
+                        administrator. The system will generate
+                        a unique Student ID and password based
+                        on the account settings.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer class="admin-footer">
+
+            <p>
+                © 2026 EduLearn. All Rights Reserved.
+            </p>
+
+            <p>
+                Academic Learning Management Platform
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/admin.js"></script>
+    <script src="../js/student-management.js"></script>
+
+</body>
+</html>
