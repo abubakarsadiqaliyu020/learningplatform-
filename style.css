@@ -950,3 +950,182 @@ a {
     max-width: 650px;
     line-height: 1.7;
 }
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-section {
+    background: var(--light);
+}
+
+
+/* CONTACT GRID */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+
+/* CONTACT INFORMATION */
+
+.contact-information h2 {
+    font-family: "Times New Roman", serif;
+    font-size: 38px;
+    margin: 10px 0 15px;
+}
+
+.contact-information > p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* CONTACT ITEMS */
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary);
+    color: var(--white);
+
+    border-radius: 8px;
+
+    font-size: 18px;
+}
+
+.contact-item h3 {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* CONTACT FORM */
+
+.contact-form-box {
+    padding: 35px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.contact-form-box h2 {
+    font-family: "Times New Roman", serif;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.contact-form-box > p {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 14px;
+
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    outline: none;
+
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+
+    background: var(--white);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+}
+
+
+/* FORM BUTTON */
+
+.contact-submit {
+    border: none;
+    cursor: pointer;
+}
+
+
+/* FORM MESSAGE */
+
+.form-message {
+    margin-top: 15px;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* FAQ */
+
+.faq-section {
+    background: var(--white);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.faq-card {
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--light);
+}
+
+.faq-card h3 {
+    font-family: "Times New Roman", serif;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.faq-card p {
+    font-size: 14px;
+    line-height: 1.7;
+}
