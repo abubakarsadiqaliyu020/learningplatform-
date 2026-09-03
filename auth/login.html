@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | EduLearn</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <link rel="stylesheet" href="../css/auth.css">
+
+</head>
+
+
+<body class="auth-body">
+
+
+<!-- ================= AUTH HEADER ================= -->
+
+<header class="auth-header">
+
+    <div class="container">
+
+        <a href="../index.html" class="logo">
+            EduLearn
+        </a>
+
+        <a href="../index.html" class="back-home">
+            ← Back to Website
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= LOGIN SECTION ================= -->
+
+<main class="login-section">
+
+    <div class="login-container">
+
+
+        <!-- LOGIN INTRO -->
+
+        <div class="login-intro">
+
+            <span>
+                EDULEARN PLATFORM
+            </span>
+
+            <h1>
+                Welcome Back
+            </h1>
+
+            <p>
+                Sign in to access your academic learning environment,
+                courses, lessons, assignments and progress.
+            </p>
+
+
+            <div class="login-roles">
+
+                <div class="login-role">
+
+                    <strong>
+                        Administrator
+                    </strong>
+
+                    <span>
+                        Manage the entire platform
+                    </span>
+
+                </div>
+
+
+                <div class="login-role">
+
+                    <strong>
+                        Teacher
+                    </strong>
+
+                    <span>
+                        Manage courses and assignments
+                    </span>
+
+                </div>
+
+
+                <div class="login-role">
+
+                    <strong>
+                        Student
+                    </strong>
+
+                    <span>
+                        Learn, practice and submit assignments
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LOGIN CARD -->
+
+        <div class="login-card">
+
+            <div class="login-card-heading">
+
+                <span>
+                    ACCOUNT LOGIN
+                </span>
+
+                <h2>
+                    Sign In
+                </h2>
+
+                <p>
+                    Enter your credentials to continue.
+                </p>
+
+            </div>
+
+
+            <form id="loginForm">
+
+
+                <!-- USER ID -->
+
+                <div class="auth-form-group">
+
+                    <label for="userId">
+                        User ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="userId"
+                        name="userId"
+                        placeholder="Enter your User ID"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="auth-form-group">
+
+                    <div class="password-label">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <a href="forgot-password.html">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <div class="password-input">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="toggle-password"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REMEMBER ME -->
+
+                <div class="remember-row">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+
+                        Remember me
+
+                    </label>
+
+                </div>
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="btn btn-primary login-button"
+                >
+                    Sign In
+                </button>
+
+
+                <!-- LOGIN MESSAGE -->
+
+                <p
+                    id="loginMessage"
+                    class="login-message"
+                ></p>
+
+            </form>
+
+
+            <div class="login-help">
+
+                <p>
+                    Don't have login credentials?
+                </p>
+
+                <span>
+                    Contact your administrator.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="auth-footer">
+
+    <p>
+        © 2026 EduLearn. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<script src="../js/main.js"></script>
+
+<script src="../js/auth.js"></script>
+
+
+</body>
+
+                      </html>
