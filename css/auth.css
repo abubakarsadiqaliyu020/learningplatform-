@@ -344,3 +344,99 @@
     }
 
 }
+
+/* =========================================
+   SIMPLE AUTH PAGES
+========================================= */
+
+.simple-auth-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+.simple-auth-card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    padding: 35px;
+
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+}
+
+
+/* CREDENTIALS */
+
+.credential-info {
+    margin: 25px 0;
+    display: grid;
+    gap: 15px;
+}
+
+
+.credential-row {
+    padding: 16px;
+
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+
+.credential-row strong {
+    display: block;
+
+    font-family: "Times New Roman", serif;
+    font-size: 19px;
+
+    margin-bottom: 5px;
+}
+
+
+.credential-row span {
+    display: block;
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    color: var(--text);
+}
+
+
+/* SECURITY NOTICE */
+
+.credential-notice {
+    margin-bottom: 25px;
+    padding: 16px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+
+.credential-notice strong {
+    display: block;
+
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+
+.credential-notice p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 700px) {
+
+    .simple-auth-card {
+        padding: 25px 20px;
+    }
+
+}
