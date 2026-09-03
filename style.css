@@ -823,3 +823,130 @@ a {
     font-size: 14px;
     line-height: 1.7;
 }
+/* =========================================
+   NEWS PAGE
+========================================= */
+
+.news-section {
+    background: var(--light);
+}
+
+
+/* NEWS GRID */
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* NEWS CARD */
+
+.news-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.10);
+}
+
+
+/* FEATURED NEWS */
+
+.featured-news {
+    grid-column: span 2;
+}
+
+
+/* NEWS IMAGE */
+
+.news-image {
+    height: 180px;
+    background: var(--dark);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-image span {
+    font-family: "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+
+/* NEWS CONTENT */
+
+.news-content {
+    padding: 25px;
+}
+
+.news-date {
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.news-content h3 {
+    font-family: "Times New Roman", serif;
+    font-size: 24px;
+    margin: 8px 0 12px;
+}
+
+.news-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.news-content a {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+
+/* ANNOUNCEMENT */
+
+.announcement-section {
+    padding: 70px 0;
+    background: var(--white);
+}
+
+.announcement-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    padding: 45px;
+
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+}
+
+.announcement-box span {
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.announcement-box h2 {
+    font-family: "Times New Roman", serif;
+    font-size: 34px;
+    margin: 8px 0 10px;
+}
+
+.announcement-box p {
+    max-width: 650px;
+    line-height: 1.7;
+}
