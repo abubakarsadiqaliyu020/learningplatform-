@@ -123,4 +123,19 @@
 
 }
 
+/* =====================================================
+   PROGRAMMES RESPONSIVE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .programme-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .programme-card {
+        grid-template-columns: 1fr;
+    }
+
+}
 
