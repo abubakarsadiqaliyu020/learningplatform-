@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses | EduLearn</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            EduLearn
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="programmes.html">Programmes</a>
+
+            <a href="courses.html" class="active">Courses</a>
+
+            <a href="news.html">News</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="auth/login.html" class="nav-login">
+                Login
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+
+    <div class="container">
+
+        <span>OUR COURSES</span>
+
+        <h1>
+            Learn Skills That Matter
+        </h1>
+
+        <p>
+            Explore our structured courses designed to help students
+            learn, practice, build real projects and develop practical
+            digital skills.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COURSE CATALOGUE ================= -->
+<section class="section courses-catalogue">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                COURSE CATALOGUE
+            </span>
+
+            <h2>
+                Explore Available Courses
+            </h2>
+
+            <p>
+                Choose a course and begin your learning journey.
+                Each course is organized into modules, lessons and
+                practical assignments.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH / FILTER -->
+        <div class="course-filter">
+
+            <div class="course-search">
+
+                <input
+                    type="text"
+                    id="courseSearch"
+                    placeholder="Search courses..."
+                >
+
+                <button type="button">
+                    Search
+                </button>
+
+            </div>
+
+
+            <div class="filter-options">
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="web">
+                        Web Development
+                    </option>
+
+                    <option value="programming">
+                        Programming
+                    </option>
+
+                    <option value="digital">
+                        Digital Skills
+                    </option>
+
+                    <option value="data">
+                        Data & Technology
+                    </option>
+
+                </select>
+
+
+                <select id="levelFilter">
+
+                    <option value="all">
+                        All Levels
+                    </option>
+
+                    <option value="beginner">
+                        Beginner
+                    </option>
+
+                    <option value="intermediate">
+                        Intermediate
+                    </option>
+
+                    <option value="advanced">
+                        Advanced
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- COURSE GRID -->
+        <div class="course-catalogue-grid">
+
+
+            <!-- COURSE 1 -->
+            <article
+                class="catalogue-course"
+                data-category="web"
+                data-level="beginner"
+            >
+
+                <div class="course-image course-web">
+                    <span>WEB</span>
+                </div>
+
+                <div class="catalogue-course-content">
+
+                    <span class="course-category">
+                        WEB DEVELOPMENT
+                    </span>
+
+                    <h3>
+                        HTML Fundamentals
+                    </h3>
+
+                    <p>
+                        Learn the foundation of web development by
+                        creating structured and semantic web pages
+                        using HTML.
+                    </p>
+
+                    <div class="course-info">
+
+                        <span>Beginner</span>
+
+                        <span>6 Modules</span>
+
+                        <span>4 Weeks</span>
+
+                    </div>
+
+                    <a href="#" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- COURSE 2 -->
+            <article
+                class="catalogue-course"
+                data-category="web"
+                data-level="beginner"
+            >
+
+                <div class="course-image course-web">
+                    <span>CSS</span>
+                </div>
+
+                <div class="catalogue-course-content">
+
+                    <span class="course-category">
+                        WEB DEVELOPMENT
+                    </span>
+
+                    <h3>
+                        CSS Fundamentals
+                    </h3>
+
+                    <p>
+                        Learn how to design beautiful, responsive and
+                        professional websites using CSS.
+                    </p>
+
+                    <div class="course-info">
+
+                        <span>Beginner</span>
+
+                        <span>6 Modules</span>
+
+                        <span>4 Weeks</span>
+
+                    </div>
+
+                    <a href="#" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- COURSE 3 -->
+            <article
+                class="catalogue-course"
+                data-category="web"
+                data-level="intermediate"
+            >
+
+                <div class="course-image course-web">
+                    <span>JS</span>
+                </div>
+
+                <div class="catalogue-course-content">
+
+                    <span class="course-category">
+                        WEB DEVELOPMENT
+                    </span>
+
+                    <h3>
+                        JavaScript Fundamentals
+                    </h3>
+
+                    <p>
+                        Understand JavaScript programming and create
+                        interactive and dynamic web applications.
+                    </p>
+
+                    <div class="course-info">
+
+                        <span>Intermediate</span>
+
+                        <span>8 Modules</span>
+
+                        <span>6 Weeks</span>
+
+                    </div>
+
+                    <a href="#" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- COURSE 4 -->
+            <article
+                class="catalogue-course"
+                data-category="programming"
+                data-level="beginner"
+            >
+
+                <div class="course-image course-programming">
+                    <span>PY</span>
+                </div>
+
+                <div class="catalogue-course-content">
+
+                    <span class="course-category">
+                        PROGRAMMING
+                    </span>
+
+                    <h3>
+                        Python Programming
+                    </h3>
+
+                    <p>
+                        Start programming with Python and develop
+                        problem-solving and computational thinking skills.
+                    </p>
+
+                    <div class="course-info">
+
+                        <span>Beginner</span>
+
+                        <span>8 Modules</span>
+
+                        <span>6 Weeks</span>
+
+                    </div>
+
+                    <a href="#" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- COURSE 5 -->
+            <article
+                class="catalogue-course"
+                data-category="digital"
+                data-level="beginner"
+            >
+
+                <div class="course-image course-digital">
+                    <span>DS</span>
+                </div>
+
+                <div class="catalogue-course-content">
+
+                    <span class="course-category">
+                        DIGITAL SKILLS
+                    </span>
+
+                    <h3>
+                        Digital Literacy
+                    </h3>
+
+                    <p>
+                        Develop essential computer, internet,
+                        communication and digital productivity skills.
+                    </p>
+
+                    <div class="course-info">
+
+                        <span>Beginner</span>
+
+                        <span>5 Modules</span>
+
+                        <span>4 Weeks</span>
+
+                    </div>
+
+                    <a href="#" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- COURSE 6 -->
+            <article
+                class="catalogue-course"
+                data-category="data"
+                data-level="intermediate"
+            >
+
+                <div class="course-image course-data">
+                    <span>DATA</span>
+                </div>
+
+                <div class="catalogue-course-content">
+
+                    <span class="course-category">
+                        DATA & TECHNOLOGY
+                    </span>
+
+                    <h3>
+                        Introduction to Data Analysis
+                    </h3>
+
+                    <p>
+                        Learn the fundamentals of data collection,
+                        organization, visualization and interpretation.
+                    </p>
+
+                    <div class="course-info">
+
+                        <span>Intermediate</span>
+
+                        <span>7 Modules</span>
+
+                        <span>6 Weeks</span>
+
+                    </div>
+
+                    <a href="#" class="course-link">
+                        View Course →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LEARNING STRUCTURE ================= -->
+<section class="section learning-structure">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                HOW COURSES WORK
+            </span>
+
+            <h2>
+                Structured for Practical Learning
+            </h2>
+
+            <p>
+                Every course follows a structured learning system
+                that connects theory with practical activities.
+            </p>
+
+        </div>
+
+
+        <div class="structure-grid">
+
+
+            <div class="structure-card">
+
+                <span class="structure-number">
+                    01
+                </span>
+
+                <h3>
+                    Course
+                </h3>
+
+                <p>
+                    Students are enrolled in specific courses
+                    according to their programme.
+                </p>
+
+            </div>
+
+
+            <div class="structure-card">
+
+                <span class="structure-number">
+                    02
+                </span>
+
+                <h3>
+                    Modules
+                </h3>
+
+                <p>
+                    Each course is divided into organized modules
+                    covering specific topics.
+                </p>
+
+            </div>
+
+
+            <div class="structure-card">
+
+                <span class="structure-number">
+                    03
+                </span>
+
+                <h3>
+                    Lessons
+                </h3>
+
+                <p>
+                    Modules contain lessons with learning materials,
+                    examples and explanations.
+                </p>
+
+            </div>
+
+
+            <div class="structure-card">
+
+                <span class="structure-number">
+                    04
+                </span>
+
+                <h3>
+                    Assignments
+                </h3>
+
+                <p>
+                    Students practice what they learn through
+                    practical assignments and projects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+
+    <div class="container cta-content">
+
+        <div>
+
+            <span>
+                START LEARNING
+            </span>
+
+            <h2>
+                Ready to Build Your Skills?
+            </h2>
+
+            <p>
+                Login to your learning account and start exploring
+                your assigned courses.
+            </p>
+
+        </div>
+
+        <a href="auth/login.html" class="btn btn-light">
+            Login to Learn
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3>
+                EduLearn
+            </h3>
+
+            <p>
+                A digital academic learning platform designed to
+                connect students, teachers and administrators.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programmes.html">Programmes</a>
+            <a href="courses.html">Courses</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Platform
+            </h4>
+
+            <a href="auth/login.html">Student Login</a>
+            <a href="auth/login.html">Teacher Login</a>
+            <a href="auth/login.html">Admin Login</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>
+                Contact
+            </h4>
+
+            <p>
+                Email: info@edulearn.com
+            </p>
+
+            <p>
+                Phone: +234 000 000 0000
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 EduLearn. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+              </html>
