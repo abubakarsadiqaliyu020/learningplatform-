@@ -473,3 +473,82 @@ a {
     padding: 20px;
     font-size: 13px;
 }
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+.page-hero {
+    background: var(--light);
+    padding: 90px 0;
+    text-align: center;
+}
+
+.page-hero > div {
+    max-width: 800px;
+}
+
+.page-hero span,
+.section-label {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.page-hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+.page-hero p {
+    max-width: 700px;
+    margin: auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 12px 0 25px;
+}
+
+.about-text p {
+    margin-bottom: 18px;
+}
+
+.about-box {
+    display: grid;
+    gap: 18px;
+}
+
+.about-stat {
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--white);
+}
+
+.about-stat strong {
+    display: block;
+    color: var(--primary);
+    font-size: 25px;
+    font-family: "Times New Roman", serif;
+}
+
+.about-stat span {
+    display: block;
+    color: var(--dark);
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.about-stat p {
+    margin: 0;
+    font-size: 14px;
+}
