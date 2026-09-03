@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | EduLearn</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- Admin CSS -->
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- =========================
+         ADMIN SIDEBAR
+    ========================== -->
+
+    <aside class="admin-sidebar" id="adminSidebar">
+
+        <div class="admin-logo">
+            <h2>EduLearn</h2>
+            <span>Administration</span>
+        </div>
+
+        <nav class="admin-nav">
+
+            <a href="dashboard.html" class="active">
+                <span>▣</span>
+                Dashboard
+            </a>
+
+            <a href="students.html">
+                <span>👨‍🎓</span>
+                Students
+            </a>
+
+            <a href="teachers.html">
+                <span>👨‍🏫</span>
+                Teachers
+            </a>
+
+            <a href="courses.html">
+                <span>📚</span>
+                Courses
+            </a>
+
+            <a href="modules.html">
+                <span>▤</span>
+                Modules
+            </a>
+
+            <a href="lessons.html">
+                <span>📖</span>
+                Lessons
+            </a>
+
+            <a href="assignments.html">
+                <span>📝</span>
+                Assignments
+            </a>
+
+            <a href="submissions.html">
+                <span>📥</span>
+                Submissions
+            </a>
+
+            <a href="announcements.html">
+                <span>📢</span>
+                Announcements
+            </a>
+
+            <a href="settings.html">
+                <span>⚙</span>
+                Settings
+            </a>
+
+        </nav>
+
+        <div class="admin-sidebar-bottom">
+
+            <a href="../auth/login.html" class="logout-link">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN ADMIN AREA
+    ========================== -->
+
+    <main class="admin-main">
+
+        <!-- TOPBAR -->
+
+        <header class="admin-topbar">
+
+            <button class="admin-menu-btn" id="adminMenuBtn">
+                ☰
+            </button>
+
+            <div class="admin-page-title">
+                <h1>Dashboard</h1>
+                <p>Welcome back, Administrator.</p>
+            </div>
+
+            <div class="admin-user">
+
+                <div class="admin-user-avatar">
+                    A
+                </div>
+
+                <div class="admin-user-info">
+                    <strong>Administrator</strong>
+                    <span>System Admin</span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             DASHBOARD CONTENT
+        ========================== -->
+
+        <section class="admin-content">
+
+            <!-- Welcome Banner -->
+
+            <div class="admin-welcome">
+
+                <div>
+                    <span class="welcome-label">
+                        ADMINISTRATION PANEL
+                    </span>
+
+                    <h2>
+                        Manage Your Academic Platform
+                    </h2>
+
+                    <p>
+                        Manage students, teachers, courses,
+                        learning content, assignments and
+                        academic activities from one place.
+                    </p>
+                </div>
+
+                <div class="welcome-icon">
+                    🎓
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 OVERVIEW CARDS
+            ========================== -->
+
+            <div class="admin-section-heading">
+                <div>
+                    <h2>Platform Overview</h2>
+                    <p>Current academic platform statistics.</p>
+                </div>
+            </div>
+
+
+            <div class="admin-stat-grid">
+
+                <!-- Students -->
+
+                <div class="admin-stat-card">
+
+                    <div class="stat-icon">
+                        👨‍🎓
+                    </div>
+
+                    <div class="stat-content">
+                        <span>Total Students</span>
+                        <strong>0</strong>
+                        <small>Registered students</small>
+                    </div>
+
+                </div>
+
+
+                <!-- Teachers -->
+
+                <div class="admin-stat-card">
+
+                    <div class="stat-icon">
+                        👨‍🏫
+                    </div>
+
+                    <div class="stat-content">
+                        <span>Total Teachers</span>
+                        <strong>0</strong>
+                        <small>Active teachers</small>
+                    </div>
+
+                </div>
+
+
+                <!-- Courses -->
+
+                <div class="admin-stat-card">
+
+                    <div class="stat-icon">
+                        📚
+                    </div>
+
+                    <div class="stat-content">
+                        <span>Total Courses</span>
+                        <strong>0</strong>
+                        <small>Available courses</small>
+                    </div>
+
+                </div>
+
+
+                <!-- Submissions -->
+
+                <div class="admin-stat-card">
+
+                    <div class="stat-icon">
+                        📥
+                    </div>
+
+                    <div class="stat-content">
+                        <span>Pending Submissions</span>
+                        <strong>0</strong>
+                        <small>Awaiting review</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 QUICK ACTIONS
+            ========================== -->
+
+            <div class="admin-section-heading">
+
+                <div>
+                    <h2>Quick Actions</h2>
+                    <p>Frequently used administration tools.</p>
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions-grid">
+
+                <a href="add-student.html" class="quick-action">
+
+                    <div class="quick-action-icon">
+                        +
+                    </div>
+
+                    <div>
+                        <h3>Add Student</h3>
+                        <p>Create a student account.</p>
+                    </div>
+
+                </a>
+
+
+                <a href="add-teacher.html" class="quick-action">
+
+                    <div class="quick-action-icon">
+                        +
+                    </div>
+
+                    <div>
+                        <h3>Add Teacher</h3>
+                        <p>Create a teacher account.</p>
+                    </div>
+
+                </a>
+
+
+                <a href="courses.html" class="quick-action">
+
+                    <div class="quick-action-icon">
+                        +
+                    </div>
+
+                    <div>
+                        <h3>Create Course</h3>
+                        <p>Add a new academic course.</p>
+                    </div>
+
+                </a>
+
+
+                <a href="announcements.html" class="quick-action">
+
+                    <div class="quick-action-icon">
+                        +
+                    </div>
+
+                    <div>
+                        <h3>Announcement</h3>
+                        <p>Publish an important update.</p>
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <!-- =========================
+                 DASHBOARD TWO COLUMNS
+            ========================== -->
+
+            <div class="admin-dashboard-columns">
+
+
+                <!-- Recent Activity -->
+
+                <div class="admin-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Recent Activity</h2>
+                            <p>Latest platform activities.</p>
+                        </div>
+
+                        <a href="#">View All</a>
+
+                    </div>
+
+
+                    <div class="activity-list">
+
+                        <div class="empty-state">
+
+                            <div class="empty-icon">
+                                ⏳
+                            </div>
+
+                            <h3>No Recent Activity</h3>
+
+                            <p>
+                                Platform activities will appear
+                                here once users begin using the system.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Pending Submissions -->
+
+                <div class="admin-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <h2>Pending Submissions</h2>
+                            <p>Assignments waiting for review.</p>
+                        </div>
+
+                        <a href="submissions.html">
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <div class="submission-summary">
+
+                        <div class="submission-number">
+                            0
+                        </div>
+
+                        <div>
+                            <strong>
+                                No pending submissions
+                            </strong>
+
+                            <p>
+                                New student submissions
+                                will appear here.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 ACADEMIC SUMMARY
+            ========================== -->
+
+            <div class="admin-panel academic-summary">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Academic Summary</h2>
+                        <p>
+                            Overview of the learning structure.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="summary-grid">
+
+                    <div class="summary-item">
+                        <span>Programmes</span>
+                        <strong>0</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Courses</span>
+                        <strong>0</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Modules</span>
+                        <strong>0</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Lessons</span>
+                        <strong>0</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Assignments</span>
+                        <strong>0</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="admin-footer">
+
+            <p>
+                © 2026 EduLearn. All Rights Reserved.
+            </p>
+
+            <p>
+                Academic Learning Management Platform
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- Admin JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/admin.js"></script>
+
+</body>
+                              </html>
