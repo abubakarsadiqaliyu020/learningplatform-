@@ -207,4 +207,52 @@
     }
 
 }
+/* =========================================
+   NEWS PAGE RESPONSIVE
+========================================= */
 
+@media (max-width: 900px) {
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-news {
+        grid-column: span 2;
+    }
+
+    .announcement-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-news {
+        grid-column: span 1;
+    }
+
+    .news-image {
+        height: 150px;
+    }
+
+    .announcement-section {
+        padding: 50px 0;
+    }
+
+    .announcement-box {
+        padding: 30px 20px;
+    }
+
+    .announcement-box h2 {
+        font-size: 28px;
+    }
+
+}
