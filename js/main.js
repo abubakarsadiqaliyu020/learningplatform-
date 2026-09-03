@@ -1,6 +1,16 @@
-const menuBtn = document.getElementById("menuBtn");
-const navbar = document.querySelector(".navbar");
+const menuBtn =
+    document.getElementById("menuBtn");
 
-menuBtn.addEventListener("click", () => {
-    navbar.classList.toggle("show");
-});
+const navbar =
+    document.querySelector(".navbar");
+
+
+if (menuBtn && navbar) {
+
+    menuBtn.addEventListener("click", function () {
+
+        navbar.classList.toggle("show");
+
+    });
+
+}
